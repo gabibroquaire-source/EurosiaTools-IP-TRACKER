@@ -1,0 +1,79 @@
+Documentation EurosiTools
+
+Pour que Eurosia Tools Fonctionne
+
+Installer la dernière version de python3
+
+Pour Windows:
+
+Télécharger Python
+
+- Site officiel python.org/downloads
+
+-Clique sur Download Python 3.x.x (la dernière version stable).
+
+Installer Python
+
+-Lance l’exécutable téléchargé.
+
+-Important : coche la case “Add Python to PATH” avant de cliquer sur Install Now.
+
+-Suis les instructions jusqu’à la fin.
+
+-Vérifier l’installation
+
+-Ouvre l’invite de commandes (cmd) et tape :
+
+	python --version
+
+Sur macOS
+
+Option 1 : Avec l’installateur officiel
+
+Télécharge le package depuis python.org/downloads
+.
+
+Ouvre le .pkg et suis les instructions.
+
+Option 2 : Avec Homebrew (recommandé si tu utilises le terminal)
+
+Installe Homebrew si ce n’est pas déjà fait :
+
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Installe Python :
+
+	brew install python
+
+Vérifie la version :
+
+	python3 --version
+
+Sur Linux
+
+Sur Debian/Ubuntu :
+
+	sudo apt update
+	sudo apt install python3
+	python3 --version
+
+Sur Fedora :
+
+	sudo dnf install python3
+	python3 --version
+
+Sur Arch Linux :
+
+	sudo pacman -S python
+	python --version
+
+Attention Les dépôts officiels Linux peuvent ne pas toujours avoir la toute dernière version. Pour la dernière version absolue, tu peux compiler Python depuis les sources :
+
+	wget https://www.python.org/ftp/python/3.x.x/Python-3.x.x.tgz
+	tar -xvf Python-3.x.x.tgz
+	cd Python-3.x.x
+	./configure --enable-optimizations
+	make
+	sudo make altinstall
+
+Utilise make altinstall pour ne pas remplacer la version système de Python.
